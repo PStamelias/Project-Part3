@@ -1,11 +1,18 @@
 import sys
 def main():
-	if sys.argv[1]=='-d':
-		dataset=sys.argv[2]
-		output=sys.argv[4]
-	if sys.argv[1]=='-o':
-		dataset=sys.argv[4]
-		output=sys.argv[2]
-
+	dataset=""
+	queryset=""
+	outputdatasetfile=""
+	outputqueryfile=""
+	for i in range(1,len(sys.argv)):
+		if sys.argv[i]=="-d":
+			dataset=sys.argv[i+1]
+		elif sys.argv[i]=="-q":
+			queryset=sys.argv[i+1]
+		elif sys.argv[i]=="-od":
+			outputdatasetfile=sys.argv[i+1]
+		elif sys.argv[i]=="-oq":
+			outputqueryfile=sys.argv[i+1]
+	
 if __name__ == "__main__":
 	main()

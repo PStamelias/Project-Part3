@@ -42,7 +42,7 @@ int main(int argc,char** argv){
 			}
 		}
 	}
-	else{
+	else{/*C*/
 		for(int i=1;i<=11;i++){
 			if(!strcmp("-d",argv[i])){
 				inputfileoriginalspace=malloc((strlen(argv[i+1])+1)*sizeof(char));
