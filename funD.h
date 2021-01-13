@@ -1,1 +1,0 @@
-void free_memory(char* input_file_original_space,char* input_file_new_space,char* output_file,char* configuration_file,char* clusters_file);
